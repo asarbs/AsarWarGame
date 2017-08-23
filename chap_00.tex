@@ -16,9 +16,19 @@ Wszystkie rzuty w grze wykonuje się przy pomocy kostek dwudziestościennych (k2
 \section{Poruszanie się}
 \subsection{Zasady ogólne}
 Atrybut Ruch oznacza maksymalna liczbę cali o które może przesunąć się model. Na końcu ruchu model może być zwrócony w dowolonym kierunku. Model może przekroczyć dowolny element terenu który jest o połowę niższy od niego oraz jego szerokość jest o połowe mniejsza od średnicy podstawki bez ponoszenia dodatkowego kosztu. W każdym innym przypadku model musi wykonać akcję Skok. 
-\subsection{Trudny teren}
 
-\textcolor{red}{tutaj należy wstawić tabelkę po tym jak okeślamy jakie typy jednostek będą w grze} 
+\begin{table}[h]
+\caption{Trudny teren}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{c}{Type jednostki} & \multicolumn{1}{c}{Zwykły} & \multicolumn{1}{c}{Trudny} & \multicolumn{1}{c}{Nie możliwy do przebycia} \\ \hline
+Piechota & pełnym ruchem & połową & nie może poruszać się \\ \hline
+Kawaleria & pełnym ruchem & nie może poruszać się & nie może poruszać się \\ \hline
+\end{tabular}
+
+\end{table}
+
+
 \section{Walka}
 \subsection{Walka wręcz}
 Jako walczące wręcz uznajemy wrogie modele jeśli ich podstawki się stykają. Walka odbywa się w sekwencji.
