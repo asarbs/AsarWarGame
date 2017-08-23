@@ -1,5 +1,8 @@
 \chapter{Zasady ogóle}
 
+\section{Pomiar odległości}
+W trakcie gry pomiarów odległości takich jak ruch, zasięgi broni dokonuje się miarką calową. Gracze mogę dokonywać pomiarów odległości w każdym momencie w trackie gry. 
+
 \section{Testy}
 
 Wszystkie rzuty w grze wykonuje się przy pomocy kostek dwudziestościennych (k20).
@@ -15,7 +18,7 @@ Wszystkie rzuty w grze wykonuje się przy pomocy kostek dwudziestościennych (k2
 Atrybut Ruch oznacza maksymalna liczbę cali o które może przesunąć się model. Na końcu ruchu model może być zwrócony w dowolonym kierunku. Model może przekroczyć dowolny element terenu który jest o połowę niższy od niego oraz jego szerokość jest o połowe mniejsza od średnicy podstawki bez ponoszenia dodatkowego kosztu. W każdym innym przypadku model musi wykonać akcję Skok. 
 \subsection{Trudny teren}
 
-\textcolor{red}{tutaj należy wstawić tabelkę po tym jak okeślimy jakie typy jednostek będą w grze} 
+\textcolor{red}{tutaj należy wstawić tabelkę po tym jak okeślamy jakie typy jednostek będą w grze} 
 \section{Walka}
 \subsection{Walka wręcz}
 Jako walczące wręcz uznajemy wrogie modele jeśli ich podstawki się stykają. Walka odbywa się w sekwencji.
@@ -23,10 +26,14 @@ Jako walczące wręcz uznajemy wrogie modele jeśli ich podstawki się stykają.
     \item Atakujący model wykonuje szarżę
     \item Model broniący się deklaruje akcje reakcji: Atak, Unik, Rzucenie czaru. 
     \item Gracze wykonują Test przeciwstawnych zadeklarowanych akcji.
-    \item Gracze rozwiązują akcje zgodnie z wynkiem Testu przeciwstawego. 
+    \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawego. 
 \end{enumerate}
 \subsection{Walka dystansowa}
-
-
-
+Walka strzelecka odbywa się w sekwencji
+\begin{enumerate}
+    \item Atakujący model deklaruje akcję Strzał
+    \item Model broniący się deklaruje akcje reakcji: Strzał, Unik, Rzucenie czaru. 
+    \item Gracze wykonują Test przeciwstawnych zadeklarowanych akcji.
+    \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawego. 
+\end{enumerate}
 
