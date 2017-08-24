@@ -13,6 +13,7 @@
 \usepackage{hyperref}
 
 \numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
 
 \pagestyle{fancy}
 
@@ -23,6 +24,11 @@
 \definecolor{red}{rgb}{1,0,0}
 \definecolor{green}{rgb}{0,0.5,0}
 \definecolor{bule}{rgb}{0,0,1}
+
+\newcommand{\myssection}[1] {
+\subsection{#1}
+\hfill\\
+}
 
 \begin{document}
 \input{titlepage.tex}
@@ -37,6 +43,6 @@
 \input{chap_03.tex}
 \input{chap_04.tex}
 \input{chap_05.tex}
-%\input{chap_06.tex}
+\input{chap_06.tex}
 %\input{biblio.tex}
 \end{document}
