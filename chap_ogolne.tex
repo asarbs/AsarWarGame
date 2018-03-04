@@ -1,7 +1,38 @@
 \chapter{Zasady ogóle}
 
+\section{Przebieg gry}
+
+\subsection{Rozpoczęcie gry}
+
+\subsubsection{Wybór sił}
+
+\subsubsection{Przygotowanie pola gry}
+
+\subsubsection{Rozstawienie}
+
+\subsection{Tura}
+
+\subsubsection{Inicjatywa}
+
+\subsubsection{Wykonanie akcji}
+
+\subsection{Warunki zwycięstwa}
+
+\subsubsection{Scenariusze}
+
+
+
 \section{Pomiar odległości}
 W trakcie gry pomiarów odległości takich jak ruch, zasięgi broni dokonuje się miarką calową. Gracze mogę dokonywać pomiarów odległości w każdym momencie w trackie gry. 
+
+\section{Pole widzenia}
+
+\subsection{Pieszy}
+Pole widzenia pieszego to \ang{180} oznaczone przez gracza na podstawce, chyba że zasady specjalne modelu mówią inaczej
+
+\subsection{Kawaleria}
+Domyślne pole widzenia kawalerzysty to \ang{360} oznaczone przez gracza na podstawce. 
+
 
 \section{Testy}
 
@@ -28,6 +59,13 @@ Kawaleria & pełnym ruchem & nie może poruszać się & nie może poruszać się
 
 \end{table}
 
+\section{Zasięg dowodzenia}
+\subsection{Model pojedynczy}
+
+\subsection{Jednostka z dowódcą}
+
+\subsection{Jednostka bez dowódcy}
+
 
 \section{Walka}
 \subsection{Walka wręcz}
@@ -48,4 +86,7 @@ Walka strzelecka odbywa się w sekwencji
     \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawnego. 
     \item Gracz który przegrał wykonuje Test pancerza.
 \end{enumerate}
+
+\subsubsection{Osłona}
+Model jest za osłoną jeśli syka się z elementem terenu oraz przynajmniej 20\% modelu jest zakryte przez ten element terenu. Model strzelający do modelu za osłoną otrzymuje modyfikator \textbf{-3} to testu US. 
 
