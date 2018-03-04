@@ -20,8 +20,6 @@
 
 \subsubsection{Scenariusze}
 
-
-
 \section{Pomiar odległości}
 W trakcie gry pomiarów odległości takich jak ruch, zasięgi broni dokonuje się miarką calową. Gracze mogę dokonywać pomiarów odległości w każdym momencie w trackie gry. 
 
@@ -33,7 +31,8 @@ Pole widzenia pieszego to \ang{180} oznaczone przez gracza na podstawce, chyba �
 \subsection{Kawaleria}
 Domyślne pole widzenia kawalerzysty to \ang{360} oznaczone przez gracza na podstawce. 
 
-\subsection{Wielkość modeli}
+\subsection{Zasłanianie modeli przez inne modele}
+Modele o takiej samej lub większej wielkości statystyki zasłaniają model za sobą w linie widzenia. 
 
 \section{Testy}
 
@@ -73,11 +72,16 @@ Kawaleria & pełnym ruchem & nie może poruszać się & nie może poruszać się
 Jako walczące wręcz uznajemy wrogie modele jeśli ich podstawki się stykają. Walka odbywa się w sekwencji.
 \begin{enumerate}
     \item Atakujący model wykonuje szarżę
-    \item Model broniący się deklaruje akcje reakcji: Atak, Unik, Rzucenie czaru. 
+    \item Model broniący się deklaruje akcje reakcji: Atak, Unik, Rzucenie czaru, Oderwanie się od przeciwnika
     \item Gracze wykonują Test przeciwstawnych zadeklarowanych akcji.
     \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawnego.
     \item Gracz który przegrał wykonuje Test pancerza.
 \end{enumerate}
+
+\subsubsection{Kilku atakujących} jednego przeciwnika zyskuje znaczącą przewagę. W trakcie wykonywania testu Walki wręcz model uzyskuje modyfikator \textbf{+1} do swojej statystyki WW za każdego kompana uczestniczącego w tej walce. 
+
+\subsubsection{Ilu przeciwników może atakować jeden model?} Model może być atakowany w walce wręcz przez tyle modeli ile może dość do kontaktu podstawek. 
+
 \subsection{Walka dystansowa}
 Walka strzelecka odbywa się w sekwencji
 \begin{enumerate}
@@ -87,5 +91,11 @@ Walka strzelecka odbywa się w sekwencji
     \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawnego. 
     \item Gracz który przegrał wykonuje Test pancerza.
 \end{enumerate}
+
 \subsubsection{Osłona}
-Model jest za osłoną jeśli syka się z elementem terenu oraz przynajmniej 20\% modelu jest zakryte przez ten element terenu. Model strzelający do modelu za osłoną otrzymuje modyfikator \textbf{-3} to testu US. 
+Model jest za osłoną jeśli syka się z elementem terenu oraz przynajmniej 20\% modelu jest zakryte przez ten element terenu. Model strzelający do modelu za osłoną otrzymuje modyfikator \textbf{-3} to testu US oraz \textbf{+3} do Testu pancerza
+
+\subsubsection{Strzelanie do walczących wręcz}
+Strzelanie do walczących wręcz obarczone jest dodatkowym modyfikatorem \textbf{-6}. Jeśli wyniki rzutu będzie mniejszy niż test Umiejętności strzeleckich -6 to został trafiony wrogi model. Jeśli wyniki będzie z przedziału wartość zmodyfikowanych US - 6 a zmodyfikowanych US został trafiony przyjazny model. 
+
+\textbf{Przykład}
