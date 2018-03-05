@@ -1,24 +1,71 @@
 \chapter{Zasady ogóle}
 
+\section{Wstęp}
+
+\subsection{Rzucanie kościami}
+W grze wszystkie rzuty wykonuje się kościami dwudziestościennymi w skrócie nazywanymi k20. Jeśli wyniki na kostce jest równy zmodyfikowanej wielkości testowanego atrybutu nazywamy to \textbf{Krytycznym sukcesem} albo \textbf{Krytykiem} jego efekt zależy od wykonywanego testu i jest opisane szczegółowo w konkretnych przypadkach. 
+
+\subsection{Mierzenie odległości}
+W grze możliwe jest wykonywanie pomiarów odległości w dowolnym momencie gry. 
+
+
 \section{Przebieg gry}
 
 \subsection{Rozpoczęcie gry}
+Każdy z graczy powinien przygotować swoją armię to jest: modele, miarki, znaczniki, listę armii. Do gry potrzebny jest też teren. Dla dużych bitew preferowany stół ma rozmiary 6 na 4 stóp, dla małych 4 na 4 stopy. 
 
 \subsubsection{Wybór sił}
+Przed rozpoczęciem gry gracze przygotowują swoją listę armii z listy sił wybranej przez siebie frakcji. Lista armii przeciwników powinna mieć podobną siłę wyrażoną sumą kosztów wybranych jednostek. Gracz musi umieścić na liści armii dokładnie jedną jednostkę z umiejętnością \hyperref[sec:link_uw_general]{Generał}.
+
+Ilość \textbf{jednostek wyposażonych w broń strzelecką} jest ograniczone do 1/3 kosztu całej armii. 
+
+\textbf{Przykład} Dla listy o wartości 1000p tylko 330 mogą stanowić jednostki wyposażone w broń strzelecką.   
+
+Liczebność \textbf{Modeli Pojedynczych} ograniczona jest w liści armii do ilości Jednostek w liście. 
 
 \subsubsection{Przygotowanie pola gry}
 
+Pole walki rzadko kiedy bywa bezkresną równią, dla tego na stole do gry należy umieścić elementy terenu takie jak lasy, krzewy, budynki, wzgórza. 
+
 \subsubsection{Rozstawienie}
+
+Do określenia kolejności rozstawiania jednostek wykonuje się Test Inicjatywy. Gracz który wygrał może wybrać który z gracz ma pierwszy wystawić swoją pierwszą jednostkę, potem przeciwnik wystawia swoją jedną jednostkę. Ten proces trwa naprzemiennie aż do wyczerpania jednostek wśród graczy. Gracz którzy przegrał może wybrać krawędź po której chce się on chce grać, przeciwnik wystawia się po przeciwnej stronie stołu. 
+
+\subsubsection{Strefa rozstawianie} to obszar w którym gracze mogą wystawić swoje jednostki, obejmuje on prostokąt od krawędzi wybranej i głębokości 12 cali. 
+
+
 
 \subsection{Tura}
 
+Mimo tego że prawdziwa bitwa jest chaotyczna to my jednak podzielimy grę na tury. Jednak tura obejmuje czas aktywacji wszystkich żyjących Jednostek na polu bitwy. 
+
+\subsection{Przed rzutem na Inicjatywę}
+Przed wykonaniem rzutu na inicjatywę należy usunąć wszystkie znaczniki "Uaktywniona" oraz innych efektów które kończą się na końcu tury. 
+
+Kolejnym krokiem przez rozpoczęciem tury (rzutem na inicjatywę) jest sprawdzenie czy armia nie jest \hyperref[sec:link_rozbicie]{rozbita}.
+
 \subsubsection{Inicjatywa}
 
-\subsubsection{Wykonanie akcji}
+Potem gracze wykonują Test Inicjatywy i przechodzą do Aktywacji jednostek. 
 
-\subsection{Warunki zwycięstwa}
+\subsubsection{Aktywacja jednostek}
+Gracz którzy wygrał Inicjatywę może wybrać jednostkę która jako pierwsza ma się aktywować - może być to jednostka przeciwnika. Następnie drugi gracz aktywuje swoją jedną jednostkę. Ten proces odbywa się naprzemiennie do aktywacji wszystkich jednostek. Jednostka już raz aktywowana oznaczana jest znacznikiem "Uaktywniona"
+
+\subsection{Koniec gry / Warunki zwycięstwa}
+Domyślnie gra trwa 4 tury w tym czasie gracze muszą zrealizować cele scenariuszy. Wygrywa gracz który zdobędzie więcej punktów za zrealizowane cele.  Gra kończy się w momencie kiedy jedna ze stron wejdzie w stan Rozbicia
+
+\subsubsection{Rozbicie}
+\label{sec:link_rozbicie}
+Armię uważamy za rozbitą kiedy jej stan liczebny zostanie zredukowany do 20\% stanu początkowego listy armii liczonej w punktach. 
 
 \subsubsection{Scenariusze}
+
+\begin{enumerate}
+    \item \hyperref[sec:link_scenariusze_przelamanie_obrony]{Przełamanie obrony}
+    \item \hyperref[sec:link_scenariusze_anihilacja]{Anihilacja}
+    \item \hyperref[sec:link_scenariusze_ostatni_bastion]{Ostatni bastion}
+    \item \hyperref[sec:link_scenariusze_zdobyc_artefakt]{Zdobyć artefakt}
+\end{enumerate}
 
 \section{Pomiar odległości}
 W trakcie gry pomiarów odległości takich jak ruch, zasięgi broni dokonuje się miarką calową. Gracze mogę dokonywać pomiarów odległości w każdym momencie w trackie gry. 
@@ -41,6 +88,9 @@ Wszystkie rzuty w grze wykonuje się przy pomocy kostek dwudziestościennych (k2
 \subsection{Testy atrybutów} wykonuje się po przez rzut k20, wyniki rzutu musi być mniejszy bądź równy wartości zmodyfikowanego atrybutu aby test został uznany za zdany. 
 
 \subsection{Testy przeciwstawne} wykonuje się po przez rzut k20, wynik rzutu musi być mniejszy bądź równy wartości zmodyfikowanego atrybutu który testujemy i większy od rzutu przeciwnika. W przypadku wyrzucenia równego wyniku na kostkach, gracze porównują wartość zmodyfikowanego atrybutu. Gracz z większym zmodyfikowanym atrybutem wygrywa Test przeciwstawny. 
+
+\subsubsection{Test Inicjatywy} jest Testem przeciwstawnym umiejętności Siła Umysłu dowódcy armii. 
+
 \subsection{Testy pancerza} wykonuje się po przez rzut k20 na atrybut Zbroja zmodyfikowany przez siłę broni. Jeśli wynik rzutu będzie mniejszy bądź równy zmodyfikowanej wartości atrybutu Zbroi gracz zdał test i model \underline{nie} otrzymuje obrażeń.
 
 
@@ -60,12 +110,15 @@ Kawaleria & pełnym ruchem & nie może poruszać się & nie może poruszać się
 \end{table}
 
 \section{Zasięg dowodzenia}
+Zasięg dowodzenia oznacza odległość w jakiej muszą znajdować się modele aby mogły być jednym odziałem i udzielać sobie wsparcia.
 \subsection{Model pojedynczy}
+Modele pojedyncze działają samodzielnie na polu walki, jednak mogą udzielać swojego wsparcia po przez użyczenie swojej wartości SU do testów tej statystyki jeśli znajdują się do 4 cali od dowolnego członka Jednostki.
 
 \subsection{Jednostka z dowódcą}
+Jednostka która posiada model \hyperref[sec:link_uw_dowdoca]{dowódcy} musi zachować koherencja w 4 calach od niego.  
 
 \subsection{Jednostka bez dowódcy}
-
+Jednostki które nie mają w swoich szeregach \hyperref[sec:link_uw_dowdoca]{dowódcy} muszą zachować koherencje 4 cali między najdalej oddalonymi modelami w jednostce. 
 
 \section{Walka}
 \subsection{Walka wręcz}
@@ -91,6 +144,9 @@ Walka strzelecka odbywa się w sekwencji
     \item Gracze rozwiązują akcje zgodnie z wynikiem Testu przeciwstawnego. 
     \item Gracz który przegrał wykonuje Test pancerza.
 \end{enumerate}
+
+\subsection{Ściąganie zabity modeli}
+Podczas strzelania od jednostki zabite modele ściąga się od strony jednostki strzelającej. 
 
 \subsubsection{Osłona}
 Model jest za osłoną jeśli syka się z elementem terenu oraz przynajmniej 20\% modelu jest zakryte przez ten element terenu. Model strzelający do modelu za osłoną otrzymuje modyfikator \textbf{-3} to testu US oraz \textbf{+3} do Testu pancerza
